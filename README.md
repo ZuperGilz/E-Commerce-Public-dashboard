@@ -28,18 +28,20 @@ Dashboard ini digunakan untuk mengeksplorasi pola pendapatan, kategori produk, s
 
 ---
 
+
 ## 📁 Struktur Folder
 
-E-Commerce-Public-dashboard/
-│
-├── dashboard.py
-├── requirements.txt
-├── README.md
-├── orders_dataset.csv
-├── order_items_dataset.csv
-├── order_reviews_dataset.csv
-├── products_dataset.csv
-└── product_category_name_translation.csv
+    project/
+    │
+    ├── dashboard.py
+    ├── requirements.txt
+    ├── README.md
+    ├── orders_dataset.csv
+    ├── order_items_dataset.csv
+    ├── order_reviews_dataset.csv
+    ├── products_dataset.csv
+    └── product_category_name_translation.csv
+
 
 ---
 
@@ -60,3 +62,5 @@ pip install -r requirements.txt
 
 # Jalankan aplikasi Streamlit
 streamlit run dashboard.py
+streamlit run app.py
+http://localhost:8501
