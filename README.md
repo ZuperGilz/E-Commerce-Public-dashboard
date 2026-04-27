@@ -3,6 +3,8 @@
 Dashboard interaktif berbasis Streamlit untuk menganalisis data Brazilian E-Commerce (Olist Dataset).  
 Dashboard ini digunakan untuk mengeksplorasi pola pendapatan, kategori produk, serta hubungan antara waktu pengiriman dan kepuasan pelanggan.
 
+🔗 **Live Demo:** [https://submission-analysis-data-agilmardian.streamlit.app/](https://submission-analysis-data-agilmardian.streamlit.app/)
+
 ---
 
 ## 📊 Fitur Dashboard
@@ -28,39 +30,82 @@ Dashboard ini digunakan untuk mengeksplorasi pola pendapatan, kategori produk, s
 
 ---
 
-
 ## 📁 Struktur Folder
 
-    project/
-    │
-    ├── dashboard.py
-    ├── requirements.txt
-    ├── README.md
-    ├── orders_dataset.csv
-    ├── order_items_dataset.csv
-    ├── order_reviews_dataset.csv
-    ├── products_dataset.csv
-    └── product_category_name_translation.csv
-
+```
+project/
+│
+├── dashboard/
+│   ├── dashboard.py
+│   ├── q1_df.csv
+│   └── q2_df.csv
+├── data/
+│   ├── order_items_dataset.csv
+│   ├── order_payments_dataset.csv
+│   ├── order_reviews_dataset.csv
+│   ├── order_dataset.csv
+│   ├── product_category_name_translation.csv
+│   └── products_dataset.csv
+├── Proyek_Analisis_Data_Agil_Mardian_Hawari.ipynb
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-## ⚙️ Cara Menjalankan Dashboard
+## ⚙️ Cara Menjalankan Dashboard Secara Lokal
 
-### 1. Clone / Download Project
-Buka terminal/command prompt Anda dan jalankan perintah berikut:
+### 1. Clone Repository
 
 ```bash
-# Clone repositori
-git clone [https://github.com/ZuperGilz/E-Commerce-Public-dashboard.git](https://github.com/ZuperGilz/E-Commerce-Public-dashboard.git)
-
-# Masuk ke direktori proyek
+git clone https://github.com/ZuperGilz/E-Commerce-Public-dashboard.git
 cd E-Commerce-Public-dashboard
+```
 
-# Instal library yang dibutuhkan
+### 2. Setup Environment (Conda)
+
+```bash
+conda create --name main-ds python=3.9
+conda activate main-ds
+```
+
+> Atau gunakan virtual environment bawaan Python:
+> ```bash
+> python -m venv venv
+> source venv/bin/activate        # Linux / macOS
+> venv\Scripts\activate           # Windows
+> ```
+
+### 3. Install Library
+
+```bash
 pip install -r requirements.txt
+```
 
-# Jalankan aplikasi Streamlit
-streamlit run dashboard.py
-streamlit run app.py
+### 4. Jalankan Notebook (Generate Dataset)
+
+Buka dan jalankan semua cell di notebook `Proyek_Analisis_Data_Agil_Mardian_Hawari.ipynb`.  
+Pastikan seluruh cell dijalankan hingga bagian **Analisis Lanjutan** agar file `q1_df.csv` dan `q2_df.csv` tersimpan secara otomatis ke folder `dashboard/`.
+
+### 5. Jalankan Dashboard
+
+```bash
+streamlit run dashboard/dashboard.py
+```
+
+Dashboard akan terbuka otomatis di browser pada alamat:
+
+```
 http://localhost:8501
+```
+
+---
+
+## 👤 Profil Pembuat
+
+**Nama:** Agil Mardian Hawari  
+**Jurusan:** Informatika  
+**Learning Path:** Data Scientist
+
+- GitHub: [https://github.com/zupergilz](https://github.com/zupergilz)
+- LinkedIn: [https://linkedin.com/in/agil-mardian-hawari](https://linkedin.com/in/agil-mardian-hawari)
