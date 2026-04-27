@@ -31,10 +31,9 @@ Dashboard ini digunakan untuk mengeksplorasi pola pendapatan, kategori produk, s
 ## 📁 Struktur Folder
 project/
 │
-├── dashboard.py
+├── app.py
 ├── requirements.txt
 ├── README.md
-│
 ├── orders_dataset.csv
 ├── order_items_dataset.csv
 ├── order_reviews_dataset.csv
