@@ -7,51 +7,56 @@ Dashboard ini digunakan untuk mengeksplorasi pola pendapatan, kategori produk, s
 
 ## 📊 Fitur Dashboard
 
-- Key Performance Indicators (KPI)
+- **Key Performance Indicators (KPI)**
   - Total pendapatan
   - Total pesanan
   - Rata-rata review
   - Rata-rata waktu pengiriman
   - Tingkat keterlambatan
 
-- Analisis Kategori Produk
+- **Analisis Kategori Produk**
   - Top kategori berdasarkan pendapatan
-  - Visualisasi distribusi revenue
+  - Visualisasi distribusi revenue dan tren bulanan
 
-- Analisis Pengiriman
-  - Hubungan waktu pengiriman dengan review
-  - Perbandingan pesanan tepat waktu vs terlambat
+- **Analisis Pengiriman**
+  - Hubungan waktu pengiriman dengan review score
+  - Perbandingan distribusi rating pada pesanan tepat waktu vs terlambat
 
-- Filter Interaktif
-  - Filter berdasarkan tahun
-  - Pengaturan jumlah top kategori
+- **Filter Interaktif**
+  - Filter rentang waktu (tanggal)
+  - Pengaturan jumlah Top N kategori
 
 ---
 
 ## 📁 Struktur Folder
 
-    project/
-    │
-    ├── app.py
-    ├── requirements.txt
-    ├── README.md
-    │
-    ├── data/
-    │   ├── orders_dataset.csv
-    │   ├── order_items_dataset.csv
-    │   ├── order_reviews_dataset.csv
-    │   ├── products_dataset.csv
-    │   └── product_category_name_translation.csv
-
+E-Commerce-Public-dashboard/
+│
+├── dashboard.py
+├── requirements.txt
+├── README.md
+├── orders_dataset.csv
+├── order_items_dataset.csv
+├── order_reviews_dataset.csv
+├── products_dataset.csv
+└── product_category_name_translation.csv
 
 ---
 
 ## ⚙️ Cara Menjalankan Dashboard
 
 ### 1. Clone / Download Project
+Buka terminal/command prompt Anda dan jalankan perintah berikut:
+
 ```bash
-git clone <repository-url>
-cd project
+# Clone repositori
+git clone [https://github.com/ZuperGilz/E-Commerce-Public-dashboard.git](https://github.com/ZuperGilz/E-Commerce-Public-dashboard.git)
+
+# Masuk ke direktori proyek
+cd E-Commerce-Public-dashboard
+
+# Instal library yang dibutuhkan
 pip install -r requirements.txt
-streamlit run app.py
-http://localhost:8501
+
+# Jalankan aplikasi Streamlit
+streamlit run dashboard.py
